@@ -1,3 +1,12 @@
+import 'package:animation/animation/explicit_animation/animated_builder_example.dart';
+import 'package:animation/animation/explicit_animation/default_text_style_transition_example.dart';
+import 'package:animation/animation/explicit_animation/fade_transition_example.dart';
+import 'package:animation/animation/explicit_animation/indexed_stack_transition_example.dart';
+import 'package:animation/animation/explicit_animation/positioned_directioned_example.dart';
+import 'package:animation/animation/explicit_animation/positioned_transition_example.dart';
+import 'package:animation/animation/explicit_animation/rotation_transition_example.dart';
+import 'package:animation/animation/explicit_animation/size_transition_example.dart';
+import 'package:animation/animation/explicit_animation/tween_animation_builder_example.dart';
 import 'package:animation/animation/implicit_animation.dart/animated_align_example.dart';
 import 'package:animation/animation/implicit_animation.dart/animated_container_example.dart';
 import 'package:animation/animation/implicit_animation.dart/animated_cross_fade_example.dart';
@@ -24,6 +33,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -56,7 +66,24 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(builder: (context) => const AnimatedSwitcherExample());
           case AnimatedListExample.screenRoute:
             return MaterialPageRoute(builder: (context) => const AnimatedListExample());
-
+          case PositionedTransitionExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const PositionedTransitionExample());
+          case SizeTransitionExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const SizeTransitionExample());
+          case RotationTransitionExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const RotationTransitionExample());
+          case AnimatedBuilderExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const AnimatedBuilderExample());
+          case FadeTransitionExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const FadeTransitionExample());
+          case PositionedDirectionedExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const PositionedDirectionedExample());
+          case TweenAnimationBuilderExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const TweenAnimationBuilderExample());
+          case DefaultTextStyleTransitionExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const DefaultTextStyleTransitionExample());
+          case IndexedStackTransitionExample.screenRoute:
+            return MaterialPageRoute(builder: (context) => const IndexedStackTransitionExample());
 
           default:
         }
