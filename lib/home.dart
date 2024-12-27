@@ -49,6 +49,9 @@ class Home extends StatelessWidget {
     NavigationPage .fadeScreenRoute,
     NavigationPage .scaleScreenRoute,
     NavigationPage .rotationScreenRoute,
+    NavigationPage .slideScreenRoute,
+    NavigationPage .sizeScreenRoute,
+    NavigationPage .mixSizeFadeTransition,
   ];
 
   @override

@@ -5,6 +5,9 @@ class NavigationPage extends StatelessWidget {
     static const fadeScreenRoute = 'Page Fade';
     static const scaleScreenRoute = 'Page Scale';
     static const rotationScreenRoute = 'Page Rotation';
+    static const slideScreenRoute = 'Page Slide';
+    static const sizeScreenRoute = 'Page Size';
+    static const mixSizeFadeTransition = 'Page Mix Size Fade';
 
 
   @override
