@@ -19,8 +19,9 @@ import 'package:animation/animation/implicit_animation.dart/animated_switcher_ex
 import 'package:animation/animation/implicit_animation.dart/animation_position_directional_example.dart';
 import 'package:animation/animation/implicit_animation.dart/animation_text_style_example.dart';
 import 'package:animation/animation/page_transition/page_fade_transition.dart';
+import 'package:animation/animation/page_transition/page_rotation_transition.dart';
 import 'package:animation/animation/page_transition/page_scale_transition.dart';
-import 'package:animation/animation/page_transition/page_two.dart';
+import 'package:animation/animation/page_transition/navigation_page.dart';
 import 'package:animation/home.dart';
 import 'package:flutter/material.dart';
 
@@ -87,10 +88,12 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(builder: (context) => const DefaultTextStyleTransitionExample());
           case IndexedStackTransitionExample.screenRoute:
             return MaterialPageRoute(builder: (context) => const IndexedStackTransitionExample());
-          case PageTwo.fadeScreenRoute:
-            return  PageFadeTransition(page: const PageTwo());
-          case PageTwo.scaleScreenRoute:
-            return  PageScaleTransition(page: const PageTwo());
+          case NavigationPage.fadeScreenRoute:
+            return  PageFadeTransition(page: const NavigationPage());
+          case NavigationPage.scaleScreenRoute:
+            return  PageScaleTransition(page: const NavigationPage());
+          case NavigationPage.rotationScreenRoute:
+            return  PageRotationTransition(page: const NavigationPage());
 
           default:
         }

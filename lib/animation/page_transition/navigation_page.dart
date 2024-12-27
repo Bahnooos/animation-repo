@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-class PageTwo extends StatelessWidget {
-  const PageTwo({super.key});
+class NavigationPage extends StatelessWidget {
+  const NavigationPage({super.key});
     static const fadeScreenRoute = 'Page Fade';
     static const scaleScreenRoute = 'Page Scale';
+    static const rotationScreenRoute = 'Page Rotation';
 
 
   @override
