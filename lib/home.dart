@@ -46,12 +46,13 @@ class Home extends StatelessWidget {
     TweenAnimationBuilderExample.screenRoute,
     DefaultTextStyleTransitionExample.screenRoute,
     IndexedStackTransitionExample.screenRoute,
-    NavigationPage .fadeScreenRoute,
-    NavigationPage .scaleScreenRoute,
-    NavigationPage .rotationScreenRoute,
-    NavigationPage .slideScreenRoute,
-    NavigationPage .sizeScreenRoute,
-    NavigationPage .mixSizeFadeTransition,
+    NavigationPage.fadeScreenRoute,
+    NavigationPage.scaleScreenRoute,
+    NavigationPage.rotationScreenRoute,
+    NavigationPage.slideScreenRoute,
+    NavigationPage.sizeScreenRoute,
+    NavigationPage.mixSizeFadeTransition,
+    NavigationPage.mixScaleRotationTransition,
   ];
 
   @override
@@ -68,7 +69,12 @@ class Home extends StatelessWidget {
         itemCount: _pages.length,
         itemBuilder: (context, index) => ElevatedButton(
           onPressed: () => Navigator.pushNamed(context, _pages[index]),
-          style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(index <= 10 ? Colors.deepOrange : Colors.blueGrey)),
+          style: ButtonStyle(
+              backgroundColor: WidgetStatePropertyAll(index <= 10
+                  ? Colors.deepOrange
+                  : index <= 19
+                      ? Colors.blueGrey
+                      : Colors.cyan)),
           child: Text(_pages[index].toString()),
         ),
       ),

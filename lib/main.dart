@@ -19,6 +19,7 @@ import 'package:animation/animation/implicit_animation.dart/animated_switcher_ex
 import 'package:animation/animation/implicit_animation.dart/animation_position_directional_example.dart';
 import 'package:animation/animation/implicit_animation.dart/animation_text_style_example.dart';
 import 'package:animation/animation/page_transition/page_fade_transition.dart';
+import 'package:animation/animation/page_transition/page_mix_scale_rotation_transition.dart';
 import 'package:animation/animation/page_transition/page_mix_size_fade_transition.dart';
 import 'package:animation/animation/page_transition/page_rotation_transition.dart';
 import 'package:animation/animation/page_transition/page_scale_transition.dart';
@@ -103,6 +104,8 @@ class MyApp extends StatelessWidget {
             return  PageSizeTransition(page: const NavigationPage());
           case NavigationPage.mixSizeFadeTransition:
             return  PageMixSizeFadeTransition(page: const NavigationPage());
+          case NavigationPage.mixScaleRotationTransition:
+            return  PageMixScaleRotationTransition(page: const NavigationPage());
 
           default:
         }
