@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class PageTwo extends StatelessWidget {
   const PageTwo({super.key});
-    static const screenRoute = 'Page Two';
+    static const fadeScreenRoute = 'Page Fade';
+    static const scaleScreenRoute = 'Page Scale';
 
 
   @override

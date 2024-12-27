@@ -46,7 +46,8 @@ class Home extends StatelessWidget {
     TweenAnimationBuilderExample.screenRoute,
     DefaultTextStyleTransitionExample.screenRoute,
     IndexedStackTransitionExample.screenRoute,
-    PageTwo .screenRoute,
+    PageTwo .fadeScreenRoute,
+    PageTwo .scaleScreenRoute,
   ];
 
   @override
