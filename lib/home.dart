@@ -20,6 +20,7 @@ import 'package:animation/animation/implicit_animation.dart/animation_position_d
 import 'package:animation/animation/implicit_animation.dart/animation_text_style_example.dart';
 import 'package:animation/animation/other_animation/custom_painter_example.dart';
 import 'package:animation/animation/other_animation/lottie_slider_animation.dart';
+import 'package:animation/animation/other_animation/rive_slider_animation.dart';
 import 'package:animation/animation/page_transition/navigation_page.dart';
 import 'package:flutter/material.dart';
 
@@ -56,6 +57,7 @@ class Home extends StatelessWidget {
     NavigationPage.mixSizeFadeTransition,
     CustomPainterExample.screenRoute,
     LottieSliderAnimation.screenRoute,
+    RiveSliderAnimation.screenRoute,
   ];
 
   @override
