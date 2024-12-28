@@ -18,6 +18,7 @@ import 'package:animation/animation/implicit_animation.dart/animated_position_ex
 import 'package:animation/animation/implicit_animation.dart/animated_switcher_example.dart';
 import 'package:animation/animation/implicit_animation.dart/animation_position_directional_example.dart';
 import 'package:animation/animation/implicit_animation.dart/animation_text_style_example.dart';
+import 'package:animation/animation/other_animation/custom_painter_example.dart';
 import 'package:animation/animation/page_transition/navigation_page.dart';
 import 'package:flutter/material.dart';
 
@@ -52,7 +53,7 @@ class Home extends StatelessWidget {
     NavigationPage.slideScreenRoute,
     NavigationPage.sizeScreenRoute,
     NavigationPage.mixSizeFadeTransition,
-    NavigationPage.mixScaleRotationTransition,
+    CustomPainterExample.screenRoute,
   ];
 
   @override
@@ -74,7 +75,9 @@ class Home extends StatelessWidget {
                   ? Colors.deepOrange
                   : index <= 19
                       ? Colors.blueGrey
-                      : Colors.cyan)),
+                      : index <= 25
+                          ? Colors.cyan
+                          : Colors.greenAccent)),
           child: Text(_pages[index].toString()),
         ),
       ),
